@@ -18,9 +18,10 @@ from wxcloudrun import views
 from django.conf.urls import url
 
 urlpatterns = (
-    # 计数器接口
-    url(r'^^api/count(/)?$', views.counter),
+
+    # 掷骰子接口
+    url(r'^^api/roll(/)?$', views.roll),
 
     # 获取主页
-    url(r'(/)?$', views.index),
+    url(r'(/)?$', views.index), # 主页
 )
